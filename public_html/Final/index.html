@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awsome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- css樣式 -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>斯馬特的個人網站</title>
+  </head>
+  <body>
+    <!-- hero area 主視覺 -->
+    <div class="fv">
+      <div class="fv-text">
+        <p>大家好，我是</p>
+        <span style="--i: 0s">Mr.斯馬特</span>
+        <span style="--i: 3s">網頁設計師</span>
+        <span style="--i: 6s">數位創作者</span>
+      </div>
+    </div>
+
+    <!-- nav 導覽列 -->
+    <nav class="nav">
+      <!-- logo-->
+      <a href="#"><div class="logo"></div></a>
+      <!-- 導覽選單 -->
+      <ul class="menu">
+        <li><a href="../HW/Index.html">首頁</a></li>
+        <li><a href="#about">關於作者</a></li>
+        <li><a href="#service">服務項目</a></li>
+        <li><a href="#portfolio">作品呈現</a></li>
+        <li><a href="#content">聯絡方式</a></li>
+      </ul>
+    </nav>
+
+    <!-- 定寬容器 -->
+    <main class="wrap">
+      <!-- about 關於作者 -->
+      <section class="about-container" id="about">
+        <div class="leftside">
+          <figure>
+            <img src="./images/author2.jpg" alt="" />
+          </figure>
+        </div>
+        <div class="rightside">
+          <h2>關於作者</h2>
+          <h1>Mr.斯馬特</h1>
+          <p>
+            大家好，我是一位追求不平凡的作家、數位創作者，立志紀錄生活新鮮事，感受生命。我的創作領域涵蓋了文字、影像、音樂等多元領域，透過不同形式的創作表達自己的想法與感受。我熱愛探索世界、挑戰自我，並且不斷學習新知識與技能。
+          </p>
+          <!-- <p>
+            在我的作品中，你可以看到對生命的熱愛、對美好事物的追求，也可以感受到我的創作熱情與能量。讓我們一起用創作，紀錄生命的美好瞬間，讓它們永遠被留存下來。
+          </p> -->
+          <div class="btn"><a href="#">了解更多</a></div>
+        </div>
+      </section>
+
+      <!-- service 服務項目 -->
+      <section class="service" id="service">
+        <h2 class="title">服務項目</h2>
+        <ul class="item-list">
+          <li>
+            <h3>網頁設計</h3>
+            <i class="fa-solid fa-laptop-code fa-fade"></i>
+            <p>能製作美觀、實用、易用的網站。</p>
+          </li>
+          <li>
+            <h3>數位行銷</h3>
+            <i class="fa-regular fa-comments fa-fade"></i>
+            <p>使用搜尋引擎優化，來推廣內容或產品。</p>
+          </li>
+          <li>
+            <h3>數據分析</h3>
+            <i class="fa-solid fa-chart-column fa-fade"></i>
+            <p>提供使用者在時間內快速獲得所需資訊。</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- portfolio 作品呈現-->
+      <section class="collection-container" id="portfolio">
+        <h2 class="title">作品呈現</h2>
+        <!-- 電腦使用 -->
+        <li>
+          <figure>
+            <img src="./images/computer.jpg" alt="" />
+          </figure>
+          <div class="collection-info">
+            <h3>電腦使用小技巧，你不可不知！</h3>
+            <p>
+              使用電腦是現代生活中必不可少的一部分，但是對於初次使用電腦的人來說，可能需要一些基本的須知……
+            </p>
+            <div class="btn"><a href="#">閱讀更多</a></div>
+          </div>
+        </li>
+        <!-- 給初學者的數位行銷指南 -->
+        <li>
+          <figure>
+            <img src="./images/seo.jpg" alt="" />
+          </figure>
+          <div class="collection-info">
+            <h3>用最佳的數位行銷策略提升你的品牌曝光度</h3>
+            <p>
+              如果你正在尋找擴大品牌影響力的方法，那麼利用社群媒體絕對是一個不可忽視的工具……
+            </p>
+            <div class="btn"><a href="#">閱讀更多</a></div>
+          </div>
+        </li>
+        <!-- 掌握數據分析，成為數位世界的決策王！ -->
+        <li>
+          <figure>
+            <img src="./images/Data-Analysis.jpg" alt="" />
+          </figure>
+          <div class="collection-info">
+            <h3>掌握數據分析，成為數位世界的決策王！</h3>
+            <p>
+              數據分析是當今數位時代中至關重要的技能之一，它能幫助企業、組織或個人了解他們的受眾、市場趨勢和表現數據……
+            </p>
+            <div class="btn"><a href="#">閱讀更多</a></div>
+          </div>
+        </li>
+      </section>
+
+      <!--content 聯絡方式 -->
+      <section class="content" id="content">
+        <h2 class="title">聯絡方式</h2>
+        <div class="form-container">
+          <div class="form-item">
+            <span> <i class="fa-solid fa-user fa-bounce"></i>您的名字:</span>
+            <p class="name">
+              <input
+                name="name"
+                type="text"
+                placeholder="Name"
+                class="feedback-input"
+              />
+            </p>
+          </div>
+          <div class="form-item">
+            <span
+              ><i class="fa-regular fa-envelope fa-bounce"></i>電子郵件:</span
+            >
+            <p class="email">
+              <input
+                type="email"
+                type="text"
+                placeholder="Emai"
+                class="feedback-input"
+              />
+            </p>
+          </div>
+          <div class="form-item">
+            <span><i class="fa-solid fa-pen-nib fa-bounce"></i>信件內容:</span>
+            <p class="text">
+              <textarea
+                name="text"
+                class="feedback-input"
+                placeholder="Comment"
+              ></textarea>
+            </p>
+          </div>
+          <div class="btn"><a href="#">送出</a></div>
+        </div>
+      </section>
+    </main>
+
+    <!--footer 頁尾 -->
+    <footer>
+      <p>版權所有 &copy; 2023 斯馬特. All rights reserved.</p>
+      <ul>
+        <li>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </li>
+        <li>
+          <a
+            href="https://instagram.com/smart_o_?igshid=YmMyMTA2M2Y="
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

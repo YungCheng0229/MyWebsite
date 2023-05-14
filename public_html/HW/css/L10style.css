@@ -1,0 +1,131 @@
+@charset "utf-8";
+/*主色調
+#ddd 白色
+#D08856 橘色
+#aa210f 紅色
+#00314f 藍色
+#41403C 灰色
+*/
+
+body{
+    background: #fff url(../img/banner.jpg) repeat-x;
+    background-attachment: fixed;
+}
+
+header{
+    width: 300px;
+    margin: 40px auto;
+    padding: 30px;
+    border-bottom: 4px solid #D08856;
+    border-radius: 30px;
+    background: linear-gradient(to right,#141e30,#243b55);
+    color:#fff;
+    text-align: center;
+}
+header>h1{
+    font-size: 300%;
+    line-height: 1; 
+    text-shadow: 1px 5px 10px #D08856;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+header>p{
+    font-size: large;
+    font-family: 'Caveat', cursive;
+}
+nav ul{
+    text-align: center;
+}
+nav li{
+    list-style-type: none;
+    display: inline-block;
+    width: 180px;
+    margin: 0 auto;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    margin: 0 15px;
+    color: #ddd;
+    background-color: #41403c;
+    border-radius: 10%;
+}
+nav a:hover{
+    background: linear-gradient(to right,#42275a , #734b6d);   
+}
+/* 設定內文 */
+#content{
+    box-sizing: border-box;
+    width: 960px;
+    margin: 0 auto;
+    padding: 10px 70px;
+    background-color: #ddd;
+}
+section>h2{
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: 5px solid #00314f;
+}
+/* 設定#content下一層的section上方要留白 */
+#content>section+section{
+    margin-top: 5px;
+}
+.h-sub{
+    font-weight: normal;
+   }
+
+.more{
+       text-align: right;
+    }
+.more>a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    color: #fff;
+    background: #243b55;
+    border-radius: 10px;
+}
+.sL{
+    float: left;
+}
+.sR{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+.img-round{
+    border-radius: 50%;
+}
+.imgL{
+    float: left;
+    margin-right: 20px;
+}
+.clearfix::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+/* 加入圖示 */
+.more>a:hover:after{
+    content: "🤩";
+    margin-left: 3px;
+
+}
+a[target="_blank"]::after{
+    content: url(../img/instagram.png);
+    margin-left: 10px;
+    vertical-align: middle;
+}
+a[href^="mailto"]::after{
+    content: url(../img/gmail.png);
+    margin-left: 10px;
+    vertical-align: middle;
+}
+footer{
+    padding: 30px;
+    background-color: #41403c;
+    color:#fff;  
+    text-align: center;
+}

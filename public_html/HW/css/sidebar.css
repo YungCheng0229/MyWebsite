@@ -1,0 +1,74 @@
+.sidebar {
+    width: 85px;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    right: 0;
+    box-shadow: 0 0 19px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+}
+
+.main-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item {
+    list-style: none;
+    width: 85px;
+    height: 65px;
+}
+
+.menu-txt {
+    opacity: 0;
+    width: 0px;
+    overflow: hidden;
+    transition: 300ms linear;
+    /* transition 預設屬性 all 動畫時間(一定要) 不延遲播放 ease */
+    display: flex;
+    align-items: center;
+
+    /* white-space: nowrap; */
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.menu-a {
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.menu-icon {
+    display: block;
+    font-size: 1.5rem;
+    color: #fcb97d;
+    position: relative;
+    z-index: 20;
+    transition: 400ms;
+}
+
+.menu-item:hover .menu-txt {
+    opacity: 1;
+    width: 100%;
+    min-width: 40px;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.menu-txt-hld {
+    position: absolute;
+    z-index: 30;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 38px;
+    box-shadow: 0 0 8px 0;
+    padding: 8.5px 8px;
+    transition: 250ms linear;
+    display: flex;
+    align-items: center;
+    right: 20px;
+    transition-delay: 300ms;
+}

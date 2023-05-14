@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/L12style.css" />
+    <link rel="shortcut icon" href="img/handshake.png" type="image/x-icon" />
+        <!-- 添加字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Noto+Sans+TC:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- sidebar.css -->
+    <link rel="stylesheet" href="./css/sidebar.css" />
+    <!-- font awsome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>冒險日記</title>
+  </head>
+<body>
+      <!-- 設定回index的sidebar -->
+      <div class="sidebar">
+        <div class="main-nav">
+          <ul class="main-manu">
+            <li class="menu-item">
+              <a href="./Index.html" class="menu-a">
+                <div class="menu-txt-hld">
+                  <i class="menu-icon fa-solid fa-house"></i>
+                  <span class="menu-txt">Index</span>
+                </div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="./Ch2L10.html" class="menu-a">
+                <div class="menu-txt-hld">
+                  <i class="menu-icon fa-solid fa-folder"></i>
+                  <span class="menu-txt">Ch2</span>
+                </div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="./Ch3L12.html" class="menu-a">
+                <div class="menu-txt-hld">
+                  <i class="menu-icon fa-solid fa-book-open-reader"></i>
+                  <span class="menu-txt">Ch3</span>
+                </div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="./Ch4L14.html" class="menu-a">
+                <div class="menu-txt-hld">
+                  <i class="menu-icon fa-solid fa-shrimp"></i>
+                  <span class="menu-txt">Ch4</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  <header>
+    <h1>冒險日記</h1>
+    <p>Enjoying your life, Enjoying your day.</p>
+  </header>
+  <main id="contents">
+    
+    <!-- form -->
+    <form id="entryForm" action="#" method="post">
+      <p><strong><span class="require">*</span>為必填項目。</strong></p>
+      <table class="entryTable">
+          <caption>加入我們</caption>
+          <tr>
+            <th>名字*</th>
+            <td><input type="text" name="name" required autofocus></td>
+          </tr>
+          <tr>
+            <th>年齡*</th>
+            <td>
+              <select name="age" id="" required>
+                <option value="" selected>請輸入歲數</option>
+                <option value="1">10~20歲</option>
+                <option value="2">21~30歲</option>
+                <option value="3">31~40歲</option>
+                <option value="4">40歲以上</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>性別*</th>
+            <td>
+              <input type="radio" name="sex" id="male" value="male" checked><label for="male">男性</label>
+              <input type="radio" id="female" name="sex" value="female"><label for="female">女性</label>
+            </td>
+          </tr>
+          <tr>
+            <th>擅長項目</th>
+            <td>
+              <input type="checkbox" name="favorite" id="fav1" value="規劃計畫">
+              <label for="fav1">規劃計畫</lable>
+              <input type="checkbox" name="favorite" id="fav2"value="執行專案">
+              <label for="fav2">執行專案</lable>
+              <input type="checkbox" name="favorite" id="fav3"value="幕後紀錄">
+              <label for="fav3">幕後紀錄</lable>
+            </td>
+          </tr>
+          <tr>
+            <th>相片</th>
+            <td><input type="file" name="photo"></td>
+            
+          </tr>
+      </table>
+
+      <table class="entryTable">
+        <caption>協助夥伴</caption>
+        <tr>
+          <th>陪伴者*</th>
+          <td><input type="text"name="c-name" required placeholder="王大明"><small>✨可用暱稱</small></td>
+        </tr>
+        <tr>
+          <th>E-mail*</th>
+          <td><input type="text"name="email" required placeholder="sample@gmail.com"><small>✨請輸入辦行文字</small></td>
+
+        </tr>
+        <tr>
+          <th>參加原因</th>
+          <td><textarea name="comment" rows="4" cols="40"></textarea></td>
+        </tr>
+      </table>
+
+      <div class="entryBtns">
+        <input type="reset" value="清除重填">
+        <input type="submit" value="送出">
+      </div>
+    </form>
+    
+  </main>
+  <footer>
+    <p><small>Copyright © 冒險日記網站 All Rights Reserved.</small></p>
+  </footer>
+</body>
