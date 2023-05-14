@@ -1,3 +1,4 @@
+/* 導入google網路字體 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
 
 /* css reset */
@@ -8,22 +9,6 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Noto Sans TC', sans-serif;
-}
-
-/* 設定css變數 */
-:root {
-    /* 顏色 */
-    --bg-c: #202123;
-    --primary-c: #76A2A1;
-    --secondary-c: #fcb97d;
-    --text-c: #B3B3B4;
-    --thover-c: #fff;
-    --gradient-c: linear-gradient(135deg, #76A2A1, #fcb97d);
-
-    /* 留白區塊 */
-    --space-s: 0.5rem;
-    --space-m: 1rem;
-    --space-l: 2rem;
 }
 
 /* 設定錨點滑順移動 */
@@ -39,7 +24,7 @@ body {
 /* 設定主視覺 fv */
 /* 參考資料: this.web 請網這邊走 、Kevin Powell */
 .fv {
-    /* background: color image attachment repeat poition / size  */
+    /* background: image attachment repeat poition / size  */
     background: url(../images/hero-img.jpg) fixed no-repeat center/ cover;
     min-height: 92vh;
     /* 設定相對位置，讓.fv-item 可以參考 */
@@ -51,7 +36,7 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--text-c);
+    color: #B3B3B4;
     font-size: 7rem;
     /* 設定文字不換行 */
     white-space: nowrap;
@@ -61,10 +46,9 @@ body {
     font-weight: 700;
     font-size: 10rem;
     /* 設定文字漸層色 */
-    background: var(--gradient-c);
+    background: linear-gradient(135deg, #76A2A1, #fcb97d);
     -webkit-background-clip: text;
     color: transparent;
-    /* 讓文字重疊 */
     position: absolute;
     opacity: 0;
 
@@ -90,8 +74,9 @@ body {
     z-index: 1;
     top: 0;
     width: 100%;
-    background-color: var(--bg-c);
+    background-color: #202123;
 
+    /* 設定flex */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,14 +94,14 @@ body {
 }
 
 .menu li {
-    padding: var(--space-s);
+    padding: 0.5rem;
 }
 
 .menu li::after {
     display: block;
     content: "";
+    padding-bottom: 0.5rem;
     border-bottom: 2px solid #fcb97d;
-    padding-bottom: var(--space-s);
     transform: scale(0);
     transition: transform 100ms ease-in-out;
 }
@@ -144,8 +129,8 @@ body {
 .about-container {
     display: flex;
     justify-content: space-around;
-    gap: var(--space-l);
-    margin-top: var(--space-l);
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 /* 左圖 */
@@ -164,6 +149,7 @@ body {
 .leftside figure img {
     width: 100%;
     height: 100%;
+    /* 讓圖形不會變形 */
     object-fit: cover;
 }
 
@@ -181,14 +167,14 @@ body {
 
 .rightside h1 {
     font-size: 4rem;
-    background: var(--gradient-c);
+    background: linear-gradient(135deg, #76A2A1, #fcb97d);
     -webkit-background-clip: text;
     color: transparent;
     margin-bottom: 30px;
 }
 
 .rightside p {
-    letter-spacing: var(--space-s);
+    letter-spacing: 0.5rem;
     line-height: 1.7;
     margin-bottom: 30px;
     color: #B3B3B4;
@@ -203,7 +189,7 @@ body {
 .btn {
     width: 200px;
     height: 40px;
-    margin: var(--space-l);
+    margin: 2rem;
 }
 
 .btn a {
@@ -237,21 +223,20 @@ body {
 
 /* serive */
 .service {
-    padding: 0 var(--space-l);
+    padding: 0 2rem;
     background-color: #202123;
-    margin-top: var(--space-l);
 }
 
 .item-list {
     display: flex;
     justify-content: space-around;
-    gap: var(--space-l);
 }
 
 .item-list li {
     width: 30%;
-    padding: 3rem;
-    border: 5px solid var(--primary-c);
+    padding: 2rem;
+    margin: 1rem;
+    border: 5px solid #fcb97d;
 
     display: flex;
     flex-direction: column;
@@ -262,18 +247,21 @@ body {
     font-size: 3.2rem;
     display: inline-block;
     width: 100%;
-    background: var(--gradient-c);
+    background: linear-gradient(135deg, #76A2A1, #fcb97d);
+    -webkit-background-clip: text;
+    color: transparent;
     text-align: center;
 }
 
 .item-list p {
     text-align: center;
-    color: var(--text-c);
+    font-weight: 500;
+    color: #B3B3B4;
 }
 
 .item-list li i {
-    margin: var(--space-l);
-    font-size: 100px;
+    margin: 3rem;
+    font-size: 80px;
     color: #76A2A1;
 }
 
@@ -285,9 +273,7 @@ body {
 .collection-container li {
     display: flex;
     align-items: center;
-    gap: 5rem;
-    margin-bottom: var(--space-s);
-
+    gap: 2rem;
 }
 
 .collection-container li:nth-child(2n) {
@@ -296,8 +282,6 @@ body {
 
 .collection-container figure {
     background: linear-gradient(135deg, #fcb97d 60%, #76A2A1 30%) fixed;
-
-    /*background: linear-gradient(45deg,#76A2A1,#fcb97d); */
     padding: 30px;
 }
 
@@ -343,7 +327,6 @@ body {
 .content {
     background-color: #202123;
     border-radius: 20px;
-    margin-bottom: var(--space-l);
 }
 
 .form-container {
@@ -355,7 +338,7 @@ body {
 }
 
 .form-item span {
-    font-size: 2.4rem;
+    font-size: 2rem;
     color: #76A2A1;
 }
 
@@ -369,21 +352,22 @@ body {
 
 /* 頁尾 */
 footer {
-    background-color: var(--bg-c);
+    background-color: #202123;
     padding: 10px;
     text-align: center;
     color: #B3B3B4;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 30px;
 }
 
 footer li {
     float: right;
-    margin: var(--space-m);
+    margin: 1rem;
 }
 
 footer i {
     font-size: 30px;
-    color: var(--thover-c);
+    color: #fff;
 }

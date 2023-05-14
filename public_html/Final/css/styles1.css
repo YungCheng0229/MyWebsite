@@ -13,28 +13,21 @@
     scroll-padding: 5rem;
 }
 
+
+/* 設定css變數 */
 :root {
-    /* 設定顏色變數 */
-    --hd-c: #fff;
-    --nav-c: #3f3b3b;
-    --txt-c: #B3B3B4;
-    --txt-dark-c: #99999b;
-    --strong1-c: #76A2A1;
-    --strong-c: #fcb97d;
-    --strong2-c: #df928e;
+    /* 顏色 */
     --bg-c: #202123;
+    --primary-c: #76A2A1;
+    --secondary-c: #fcb97d;
+    --text-c: #B3B3B4;
+    --thover-c: #fff;
+    --gradient-c: linear-gradient(135deg, #76A2A1, #fcb97d);
 
-    /* 設定留白變數 */
-    --space-s: 15px;
-    --space-m: 30px;
-    --space-l: 60px;
-
-    /* font-size 
-        h1 2.5rem
-        h2 1.5rem 
-        p 1rem
-    */
-
+    /* 留白區塊 */
+    --space-s: 0.5rem;
+    --space-m: 1rem;
+    --space-l: 2rem;
 }
 
 body {
